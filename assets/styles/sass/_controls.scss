@@ -1,0 +1,39 @@
+.controlls {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  &__control {
+    align-items: center;
+    background-color: var(--color-grey-4);
+    border-radius: 50%;
+    box-shadow: var(--box-shadow-1);
+    cursor: pointer;
+    display: flex;
+    height: 55px;
+    justify-content: center;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    width: 55px;
+
+    & i {
+      color: var(--color-grey-2);
+      font-size: 1.2rem;
+      pointer-events: none;
+    }
+  }
+
+  .active-btn {
+    background-color: var(--color-secondary) !important;
+    transition: all 0.4s ease-in-out;
+    & i {
+      color: var(--color-white) !important;
+    }
+  }
+}
