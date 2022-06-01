@@ -51,7 +51,7 @@ a {
 }
 
 header {
-  min-height: 100vh;
+  height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   padding: 0 !important;
@@ -70,6 +70,7 @@ section {
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
 }
+
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
@@ -84,18 +85,18 @@ section {
   display: none;
   transform: translateY(0) scale(1);
 }
-.sec3 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-.sec4 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
-.sec5 {
-  display: none;
-  transform: translateY(0) scale(1);
-}
+// .sec3 {
+//   display: none;
+//   transform: translateY(0) scale(1);
+// }
+// .sec4 {
+//   display: none;
+//   transform: translateY(0) scale(1);
+// }
+// .sec5 {
+//   display: none;
+//   transform: translateY(0) scale(1);
+// }
 
 .active {
   display: block;
