@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('.section');
-const sectBtns = document.querySelectorAll('.controlls');
-const sectBtn = document.querySelectorAll('.controlls__control');
+const sectBtns = document.querySelectorAll('.controls');
+const sectBtn = document.querySelectorAll('.controls__control');
 const allSections = document.querySelector('.main-content');
 
 function pageTransitions() {
