@@ -1,28 +1,9 @@
-%sectProps {
+@mixin sectProps {
   display: none;
   transform: translateY(0) scale(1);
 }
 
-%titleProps {
-  font-size: 1.4rem;
-  padding: 3.5rem 0;
-  position: relative;
-  text-align: center;
-  text-transform: uppercase;
-
-  &::before {
-    content: "";
-    background-color: var(--color-grey-5);
-    height: 1px;
-    left: 50%;
-    position: absolute;
-    top: 0;
-    transform: translateX(-50%);
-    width: 40%;
-  }
-}
-
-%main-titleProps {
+@mixin main-titleProps {
   text-align: center;
 
   h2 {

@@ -1,5 +1,5 @@
 .portfolio {
   &__main-title {
-    @extend %main-titleProps; 
+    @include main-titleProps;
   }
 }

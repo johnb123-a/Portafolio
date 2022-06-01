@@ -42,19 +42,19 @@ section {
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary);
   &--sec1 {
-    @extend %sectProps;
+    @include sectProps;
   }
   &--sec2 {
-    @extend %sectProps;
+    @include sectProps;
   }
   &--sec3 {
-    @extend %sectProps;
+    @include sectProps;
   }
   &--sec4 {
-    @extend %sectProps;
+    @include sectProps;
   }
   &--sec5 {
-    @extend %sectProps;
+    @include sectProps;
   }
 }
 
