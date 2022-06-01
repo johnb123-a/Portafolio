@@ -34,9 +34,17 @@ function pageTransitions() {
     })
     //Toggle theme 
     const themeBtn = document.querySelector('.theme-btn');
+    const currentTheme = localStorage.getItem('currentTheme');
+
+    currentTheme && allSections.classList.add('light-mode');
+
     themeBtn.addEventListener('click', () => {
         let element = document.body;
         element.classList.toggle('light-mode');
+
+        element.classList.contains('light-mode')
+            ? localStorage.setItem('currentTheme', 'light-mode')
+            : localStorage.removeItem('currentTheme')
     })
 }
 
