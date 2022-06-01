@@ -1,11 +1,14 @@
 @import "./sass/abstracts/variables";
 @import "./sass/abstracts/mixin";
-@import "./sass/base";
-@import "./sass/controlls";
+
 @import "./sass/base/utilities";
+@import "./sass/base/base";
+
 @import "./sass/layout/header";
 @import "./sass/components/btn";
 @import "./sass/components/about";
 @import "./sass/components/portfolio";
 @import "./sass/components/blogs";
 @import "./sass/components/contact";
+@import "./sass/components/controlls";
+@import "./sass/components/theme-btn";
