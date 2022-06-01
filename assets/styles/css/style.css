@@ -202,13 +202,13 @@ section {
       transition: all 0.4s ease-in-out;
       width: 100%; }
 
-.about__stats--title {
+.about__stats--title, .about .timeline--title {
   font-size: 1.4rem;
   padding: 3.5rem 0;
   position: relative;
   text-align: center;
   text-transform: uppercase; }
-  .about__stats--title::before {
+  .about__stats--title::before, .about .timeline--title::before {
     content: "";
     background-color: var(--color-grey-5);
     height: 1px;
@@ -334,3 +334,45 @@ section {
             width: 83%; }
           .about__stats .progress-bars .progress-bar__content--progress .vue {
             width: 75%; }
+
+.about__timeline {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(2, 1fr);
+  padding-bottom: 3rem; }
+  .about__timeline .timeline__item {
+    border-left: 2px solid var(--color-grey-5);
+    padding-left: 3rem;
+    position: relative; }
+    .about__timeline .timeline__item--icon {
+      align-items: center;
+      background-color: var(--color-secondary);
+      border-radius: 50%;
+      display: flex;
+      height: 50px;
+      justify-content: center;
+      left: -27px;
+      position: absolute;
+      top: 0;
+      width: 50px; }
+      .about__timeline .timeline__item--icon i {
+        font-size: 1.3rem; }
+    .about__timeline .timeline__item--duration {
+      background-color: var(--color-grey-5);
+      border-radius: 15px;
+      display: inline-block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.2rem 0.6rem;
+      text-transform: uppercase; }
+    .about__timeline .timeline__item h5 {
+      padding: 1rem 0;
+      text-transform: uppercase;
+      font-size: 1.3rem;
+      font-weight: 600; }
+      .about__timeline .timeline__item h5 span {
+        color: var(--color-grey-2);
+        font-weight: 500;
+        font-size: 1.2rem; }
+    .about__timeline .timeline__item p {
+      color: var(--color-grey-2); }

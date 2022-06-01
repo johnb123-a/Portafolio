@@ -192,4 +192,64 @@
       }
     }
   }
+
+  .timeline--title {
+    @extend %titleprops;
+  }
+
+  &__timeline {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 3rem;
+
+    .timeline__item {
+      border-left: 2px solid var(--color-grey-5);
+      padding-left: 3rem;
+      position: relative;
+
+      &--icon {
+        align-items: center;
+        background-color: var(--color-secondary);
+        border-radius: 50%;
+        display: flex;
+        height: 50px;
+        justify-content: center;
+        left: -27px;
+        position: absolute;
+        top: 0;
+        width: 50px;
+        i {
+          font-size: 1.3rem;
+        }
+      }
+
+      &--duration {
+        background-color: var(--color-grey-5);
+        border-radius: 15px;
+        display: inline-block;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.2rem 0.6rem;
+        text-transform: uppercase;
+      }
+
+      h5 {
+        padding: 1rem 0;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-weight: 600;
+
+        span {
+          color: var(--color-grey-2);
+          font-weight: 500;
+          font-size: 1.2rem;
+        }
+      }
+
+      p {
+        color: var(--color-grey-2);
+      }
+    }
+  }
 }
