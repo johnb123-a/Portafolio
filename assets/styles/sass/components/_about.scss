@@ -1,25 +1,194 @@
+%titleprops {
+  font-size: 1.4rem;
+  padding: 3.5rem 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    background-color: var(--color-grey-5);
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+}
+
 .about {
   &__main-title {
     text-align: center;
+
     h2 {
-      position: relative;
-      text-transform: uppercase;
       font-size: 4rem;
       font-weight: 700;
+      position: relative;
+      text-transform: uppercase;
 
       span {
         color: var(--color-secondary);
       }
+
       .bg-text {
+        color: var(--color-grey-5);
+        font-size: 6.3rem;
+        font-weight: 800;
+        left: 50%;
         position: absolute;
         top: 50%;
-        left: 50%;
-        color: var(--color-grey-5);
+        transform: translate(-50%, -50%);
         transition: all 0.4s ease-in-out;
         z-index: -1;
-        transform: translate(-50%, -50%);
-        font-weight: 800;
-        font-size: 6.3rem;
+      }
+    }
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+
+    &--right {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+
+      .about-item {
+        border-radius: 5px;
+        border: 1px solid var(--color-grey-5);
+        box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.4s ease-in-out;
+
+        &:hover {
+          border: 1px solid var(--color-secondary);
+          box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.32);
+          cursor: default;
+          transform: translateY(-5px);
+        }
+
+        &__text {
+          padding: 1.5rem;
+          display: flex;
+          flex-direction: column;
+
+          &--large {
+            color: var(--color-secondary);
+            font-size: 3rem;
+            font-weight: 700;
+          }
+
+          &--small {
+            color: var(--color-grey-1);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            padding-left: 3rem;
+            position: relative;
+            text-transform: uppercase;
+
+            &::before {
+              background-color: var(--color-grey-5);
+              content: "";
+              height: 2px;
+              left: 0;
+              position: absolute;
+              top: 15px;
+              width: 2rem;
+            }
+          }
+        }
+      }
+    }
+    &--left {
+      padding-right: 5rem;
+
+      h4 {
+        font-size: 2rem;
+        text-transform: uppercase;
+      }
+
+      p {
+        color: var(--color-grey-1);
+        line-height: 2rem;
+        padding: 1rem;
+      }
+    }
+  }
+
+  &__stats {
+    padding-bottom: 4rem;
+
+    &--title {
+      @extend %titleprops;
+    }
+
+    .progress-bars {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 2rem;
+
+      .progress-bar {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0.5rem;
+
+        &--title {
+          text-transform: uppercase;
+          font-weight: 500;
+        }
+
+        &__content {
+          align-items: center;
+          display: flex;
+
+          &--text {
+            color: var(--color-grey-2);
+          }
+
+          &--progress {
+            background-color: var(--color-grey-4);
+            height: 0.45rem;
+            margin-left: 1rem;
+            position: relative;
+            width: 100%;
+
+            span {
+              background-color: var(--color-secondary);
+              height: 100%;
+              left: 0;
+              position: absolute;
+              top: 0;
+              transition: all 0.4s ease-in-out;
+              width: 50%;
+            }
+
+            .html {
+              width: 85%;
+            }
+
+            .css {
+              width: 90%;
+            }
+
+            .js {
+              width: 75%;
+            }
+
+            .react {
+              width: 78%;
+            }
+
+            .nodejs {
+              width: 83%;
+            }
+
+            .vue {
+              width: 75%;
+            }
+          }
+        }
       }
     }
   }
