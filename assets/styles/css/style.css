@@ -88,11 +88,15 @@ section {
   display: none;
   transform: translateY(0) scale(1); }
 
-.container {
-  display: none;
-  transform: translateY(-100%) scale(0);
-  transition: all 0.4s ease-in-out;
-  background-color: var(--color-primary); }
+.active {
+  display: block;
+  animation: scaleAnim 1s ease-in-out; }
+
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0); }
+  100% {
+    transform: translateY(0) scaleY(1); } }
 
 .controlls {
   align-items: center;
