@@ -1,0 +1,50 @@
+%sectProps {
+  display: none;
+  transform: translateY(0) scale(1);
+}
+
+%titleProps {
+  font-size: 1.4rem;
+  padding: 3.5rem 0;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    background-color: var(--color-grey-5);
+    height: 1px;
+    left: 50%;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    width: 40%;
+  }
+}
+
+%main-titleProps {
+  text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    position: relative;
+    text-transform: uppercase;
+
+    span {
+      color: var(--color-secondary);
+    }
+
+    .bg-text {
+      color: var(--color-grey-5);
+      font-size: 6.3rem;
+      font-weight: 800;
+      left: 50%;
+      position: absolute;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.4s ease-in-out;
+      z-index: -1;
+    }
+  }
+}
