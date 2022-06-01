@@ -32,6 +32,10 @@
   --color-grey-5: #f8f8f8;
   --color-grey-6: #12181b; }
 
+.section--sec1, .section--sec2, .section--sec3, .section--sec4, .section--sec5 {
+  display: none;
+  transform: translateY(0) scale(1); }
+
 body {
   background-color: var(--color-primary);
   font-family: "Poppins", sans-serif;
@@ -64,18 +68,6 @@ section {
   transform: translateY(-100%) scale(0);
   transition: all 0.4s ease-in-out;
   background-color: var(--color-primary); }
-
-.sec1 {
-  display: none;
-  transform: translateY(0) scale(1); }
-
-.sec1 {
-  display: none;
-  transform: translateY(0) scale(1); }
-
-.sec2 {
-  display: none;
-  transform: translateY(0) scale(1); }
 
 .active {
   display: block;

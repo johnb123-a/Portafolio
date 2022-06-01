@@ -1,4 +1,4 @@
-%titleprops {
+%titleProps {
   font-size: 1.4rem;
   padding: 3.5rem 0;
   position: relative;
@@ -121,7 +121,7 @@
     padding-bottom: 4rem;
 
     &--title {
-      @extend %titleprops;
+      @extend %titleProps;
     }
 
     .progress-bars {
@@ -194,7 +194,7 @@
   }
 
   .timeline--title {
-    @extend %titleprops;
+    @extend %titleProps;
   }
 
   &__timeline {
