@@ -19,7 +19,7 @@
 
 .about {
   &__main-title {
-    @include main-titleProps;
+    @include mainTitleProps;
   }
   &__container {
     display: grid;

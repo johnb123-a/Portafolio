@@ -380,6 +380,11 @@ section {
     .about__timeline .timeline__item p {
       color: var(--color-grey-2); }
 
+.portfolio__portfolios .portfolio__item--hover, .portfolio__portfolios .portfolio__item--hover .icons, .portfolio__portfolios .portfolio__item--hover .icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
 .portfolio__main-title {
   text-align: center; }
   .portfolio__main-title h2 {
@@ -399,3 +404,55 @@ section {
       transform: translate(-50%, -50%);
       transition: all 0.4s ease-in-out;
       z-index: -1; }
+
+.portfolio__text {
+  padding: 2rem 0;
+  text-align: center; }
+
+.portfolio__portfolios {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem; }
+  .portfolio__portfolios .portfolio__item {
+    position: relative; }
+    .portfolio__portfolios .portfolio__item--image img {
+      border-radius: 15px;
+      height: 300px;
+      object-fit: cover;
+      width: 100%; }
+    .portfolio__portfolios .portfolio__item--hover {
+      background-color: var(--color-secondary);
+      border-radius: 15px;
+      flex-direction: column;
+      height: 100%;
+      left: 0;
+      opacity: 0;
+      position: absolute;
+      top: 0;
+      transform: scale(0);
+      transition: all 0.4s ease-in-out;
+      width: 100%; }
+      .portfolio__portfolios .portfolio__item--hover h3 {
+        font-size: 1.5rem;
+        color: var(--color-white);
+        margin-bottom: 1.5rem; }
+      .portfolio__portfolios .portfolio__item--hover .icons .icon {
+        background-color: var(--color-primary);
+        border-radius: 50%;
+        cursor: pointer;
+        height: 50px;
+        margin: 0 1rem;
+        transition: all 0.4s ease-in-out;
+        width: 50px; }
+        .portfolio__portfolios .portfolio__item--hover .icons .icon i {
+          font-size: 1.5rem;
+          color: var(--color-white);
+          margin: 0 1rem; }
+        .portfolio__portfolios .portfolio__item--hover .icons .icon:hover {
+          background-color: var(--color-white); }
+          .portfolio__portfolios .portfolio__item--hover .icons .icon:hover i {
+            color: var(--color-primary); }
+  .portfolio__portfolios .portfolio__item:hover .portfolio__item--hover {
+    opacity: 1;
+    transform: scale(1); }
