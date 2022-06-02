@@ -10,6 +10,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --scrollbar: #25282e;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, 0.3); }
 
@@ -24,7 +25,8 @@
   --color-grey-3: #6c7983;
   --color-grey-4: #454e56;
   --color-grey-5: #f8f8f8;
-  --color-grey-6: #12181b; }
+  --color-grey-6: #12181b;
+  --scrollbar: #acacac; }
 
 .u-input-control {
   display: flex; }
@@ -139,9 +141,6 @@ section {
     .header__content--right p {
       line-height: 2rem;
       margin: 1.5rem 0; }
-
-.footer {
-  display: none; }
 
 .btn-container {
   align-self: flex-start;
@@ -755,6 +754,19 @@ section {
     font-size: 1.4rem;
     color: var(--color-grey-2);
     pointer-events: none; }
+
+::-webkit-scrollbar {
+  width: 1rem; }
+
+::-webkit-scrollbar-track {
+  background: var(--color-white); }
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-secondary); }
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar); }
 
 @media screen and (min-width: 1432px) {
   header {
