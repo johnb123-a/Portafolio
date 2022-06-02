@@ -23,11 +23,13 @@
       .h-shape {
         display: none;
       }
-      .image {
-        margin: 0 auto;
-        width: 90%;
-      }
     }
+    // &--left {
+    //   .image {
+    //     //margin: 0 auto;
+    //     //width: 90%;
+    //   }
+    // }
     &--right {
       grid-row: 1;
       padding: 2rem !important;

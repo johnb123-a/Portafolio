@@ -707,9 +707,6 @@ section {
     padding-bottom: 6rem; }
     .header__content--left .h-shape {
       display: none; }
-    .header__content--left .image {
-      margin: 0 auto;
-      width: 90%; }
     .header__content--right {
       grid-row: 1;
       padding: 2rem !important;
