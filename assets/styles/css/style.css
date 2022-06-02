@@ -692,7 +692,7 @@ section {
 @media screen and (max-width: 600px) {
   header {
     padding: 0;
-    max-height: 180vh; }
+    max-height: 300vh; }
   .section {
     padding: 2rem 2.5rem !important; }
   /* ################################################## */
@@ -707,6 +707,9 @@ section {
     padding-bottom: 6rem; }
     .header__content--left .h-shape {
       display: none; }
+    .header__content--left .image {
+      margin: 0 auto;
+      width: 90%; }
     .header__content--right {
       grid-row: 1;
       padding: 2rem !important;
