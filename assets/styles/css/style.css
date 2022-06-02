@@ -51,7 +51,7 @@ a {
   font-family: inherit; }
 
 header {
-  max-height: 100vh;
+  min-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   padding: 0 !important; }
@@ -691,8 +691,7 @@ section {
 
 @media screen and (max-width: 600px) {
   header {
-    padding: 0;
-    max-height: 2000px; }
+    padding: 0; }
   .section {
     padding: 2rem 2.5rem !important; }
   /* ################################################## */
