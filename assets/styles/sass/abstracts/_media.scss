@@ -124,6 +124,19 @@
     padding: 4rem 6rem !important;
   }
   /* ################################################## */
+  .header__content {
+    &--right {
+      p {
+        b {
+          font-size: 1.3rem;
+        }
+        span {
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  /* ################################################## */
   .about {
     &__stats {
       .progress-bars {
@@ -197,6 +210,14 @@
       width: 90%;
       .name {
         font-size: 2.5rem !important;
+      }
+      p {
+        b {
+          font-size: 1.1rem;
+        }
+        span {
+          font-size: 1.5rem;
+        }
       }
     }
   }
@@ -293,6 +314,19 @@
                 }
               }
             }
+          }
+        }
+      }
+    }
+    /* ################################################## */
+    .header__content {
+      &--right {
+        p {
+          b {
+            font-size: 1rem;
+          }
+          span {
+            font-size: 1.3rem;
           }
         }
       }
