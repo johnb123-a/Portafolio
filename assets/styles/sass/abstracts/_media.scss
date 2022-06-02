@@ -1,10 +1,9 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1432px) {
   header {
-    padding: 0;
+    padding: 0 !important;
   }
-
   .section {
-    padding: 2rem 2.5rem !important;
+    padding: 7rem 11rem !important;
   }
   /* ################################################## */
   .u-input-control {
@@ -13,6 +12,148 @@
       margin-left: 0;
       margin-top: 1.5rem;
     }
+  }
+  /* ################################################## */
+  .contact {
+    &__container {
+      &--content {
+        flex-direction: column;
+        .content__right {
+          margin-left: 0;
+          margin-top: 2.5rem;
+        }
+      }
+    }
+  }
+  /* ################################################## */
+  .header__content {
+    padding-bottom: 6rem;
+    &--left {
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    &--right {
+      padding: 1rem !important;
+      width: 100%;
+      margin: 0 auto;
+      .name {
+        font-size: 4rem !important;
+      }
+    }
+  }
+  /* ################################################## */
+  .blogs {
+    &__content {
+      &--container {
+        padding-top: 6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 4rem 8rem !important;
+  }
+  .about {
+    &__container {
+      grid-template-columns: 1fr;
+      &--right {
+        grid-template-columns: 1fr;
+        padding-top: 2.5rem;
+      }
+    }
+  }
+  /* ################################################## */
+  .header__content {
+    grid-template-columns: 1fr;
+
+    &--left {
+      .h-shape {
+        display: none;
+      }
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+
+    &--right {
+      grid-row: 1;
+      padding: 2rem !important;
+      width: 90%;
+      margin: 0 auto;
+      .name {
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+  /* ################################################## */
+  .portfolio {
+    &__portfolios {
+      grid-template-columns: repeat(2, 1fr);
+      padding-bottom: 6rem;
+    }
+  }
+  /* ################################################## */
+  .blogs {
+    &__content {
+      &--container {
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 6rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  header {
+    padding: 0 !important;
+  }
+  .section {
+    padding: 4rem 6rem !important;
+  }
+  /* ################################################## */
+  .about {
+    &__stats {
+      .progress-bars {
+        grid-template-columns: 1fr;
+      }
+    }
+    &__timeline {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+  }
+  /* ################################################## */
+  .portfolio {
+    &__portfolios {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+  }
+  /* ################################################## */
+  .blogs {
+    &__content {
+      &--container {
+        grid-template-columns: 1fr;
+        padding-top: 6rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0 !important;
+  }
+
+  .section {
+    padding: 2rem 2.5rem !important;
   }
   /* ################################################## */
   .header__content {
@@ -76,26 +217,6 @@
       &--container {
         grid-template-columns: 1fr;
         padding-bottom: 6rem;
-      }
-    }
-  }
-  /* ################################################## */
-  .contact {
-    &__container {
-      &--content {
-        flex-direction: column;
-        .content__right {
-          margin-left: 0;
-          margin-top: 2.5rem;
-        }
-        .content__left {
-          &--contact-icons {
-            .contact-icon {
-              align-items: center;
-              justify-content: center;
-            }
-          }
-        }
       }
     }
   }

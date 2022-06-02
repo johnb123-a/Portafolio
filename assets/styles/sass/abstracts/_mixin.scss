@@ -28,6 +28,31 @@
       z-index: -1;
     }
   }
+  @media screen and (max-width: 1432px) {
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 3.5rem;
+      span {
+        font-size: 4rem;
+      }
+      .bg-text {
+        font-size: 5rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    h2 {
+      margin-bottom: 2rem;
+      font-size: 3rem;
+      span {
+        font-size: 3.5rem;
+      }
+      .bg-text {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
   @media screen and (max-width: 600px) {
     h2 {
       font-size: 2rem;
