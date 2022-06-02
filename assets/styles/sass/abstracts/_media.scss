@@ -2,6 +2,21 @@
   header {
     max-height: 100vh;
   }
+  .contact {
+    &__container {
+      &--content {
+        .content__left {
+          &--info-contact {
+            .contact__item {
+              &--email--2 {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 @media screen and (max-width: 1432px) {
   header {
@@ -26,6 +41,15 @@
         .content__right {
           margin-left: 0;
           margin-top: 2.5rem;
+        }
+        .content__left {
+          &--info-contact {
+            .contact__item {
+              &--email--2 {
+                display: none;
+              }
+            }
+          }
         }
       }
     }
@@ -311,6 +335,12 @@
                 p {
                   margin: 0.3rem 0 !important;
                   padding: 0 2.5rem !important;
+                }
+                &--email--1 {
+                  display: none;
+                }
+                &--email--2 {
+                  display: inline;
                 }
               }
             }

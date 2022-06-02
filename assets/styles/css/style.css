@@ -774,7 +774,9 @@ section {
 
 @media screen and (min-width: 1432px) {
   header {
-    max-height: 100vh; } }
+    max-height: 100vh; }
+  .contact__container--content .content__left--info-contact .contact__item--email--2 {
+    display: none; } }
 
 @media screen and (max-width: 1432px) {
   header {
@@ -793,6 +795,8 @@ section {
     .contact__container--content .content__right {
       margin-left: 0;
       margin-top: 2.5rem; }
+    .contact__container--content .content__left--info-contact .contact__item--email--2 {
+      display: none; }
   /* ################################################## */
   .header__content {
     padding-bottom: 6rem; }
@@ -952,6 +956,10 @@ section {
     .contact__container--content .content__left--info-contact .contact__item p {
       margin: 0.3rem 0 !important;
       padding: 0 2.5rem !important; }
+    .contact__container--content .content__left--info-contact .contact__item--email--1 {
+      display: none; }
+    .contact__container--content .content__left--info-contact .contact__item--email--2 {
+      display: inline; }
   .contact__container--content .content__right--contact-form .container-btn__main-btn .btn-text {
     padding: 0 0.4rem; }
   .contact__container--content .content__right--contact-form .container-btn__main-btn .btn-icon {
