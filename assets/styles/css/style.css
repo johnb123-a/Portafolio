@@ -777,9 +777,9 @@ section {
       margin: 0 auto;
       width: 90%; }
     .header__content--right {
+      margin: 0 auto;
       padding: 1rem !important;
-      width: 100%;
-      margin: 0 auto; }
+      width: 100%; }
       .header__content--right .name {
         font-size: 4rem !important; }
   /* ################################################## */
@@ -806,9 +806,9 @@ section {
       width: 90%; }
     .header__content--right {
       grid-row: 1;
+      margin: 0 auto;
       padding: 2rem !important;
-      width: 90%;
-      margin: 0 auto; }
+      width: 90%; }
       .header__content--right .name {
         font-size: 2.5rem !important; }
   /* ################################################## */
@@ -838,7 +838,12 @@ section {
   /* ################################################## */
   .blogs__content--container {
     grid-template-columns: 1fr;
-    padding-top: 6rem; } }
+    padding-top: 6rem; }
+  /* ################################################## */
+  .contact__container--content .content__left--contact-icons .contact-icon {
+    align-items: center;
+    display: flex;
+    justify-content: center; } }
 
 @media screen and (max-width: 600px) {
   header {
@@ -856,9 +861,9 @@ section {
       width: 90%; }
     .header__content--right {
       grid-row: 1;
+      margin: 0 auto;
       padding: 2rem !important;
-      width: 90%;
-      margin: 0 auto; }
+      width: 90%; }
       .header__content--right .name {
         font-size: 2.5rem !important; }
   /* ################################################## */
@@ -886,17 +891,27 @@ section {
     padding-bottom: 6rem; }
   /* ################################################## */
   .controls {
-    top: auto;
+    background-color: var(--color-grey-5);
     bottom: 0;
     flex-direction: row;
     justify-content: center;
     left: 50%;
+    top: auto;
     transform: translateX(-50%);
-    width: 100%;
-    background-color: var(--color-grey-5); }
+    width: 100%; }
     .controls__control {
       margin: 1rem 0.3rem; }
   /* ################################################## */
   .theme-btn {
     width: 50px;
     height: 50px; } }
+
+@media screen and (max-width: 600px) and (max-width: 490px) {
+  .contact__container--content .content__left--info-contact .contact__item {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .contact__container--content .content__left--info-contact .contact__item p {
+      margin: 0.3rem 0 !important;
+      padding: 0 2.5rem !important; } }
