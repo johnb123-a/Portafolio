@@ -140,6 +140,9 @@ section {
       line-height: 2rem;
       margin: 1.5rem 0; }
 
+.footer {
+  display: none; }
+
 .btn-container {
   align-self: flex-start;
   display: flex; }
@@ -752,6 +755,10 @@ section {
     font-size: 1.4rem;
     color: var(--color-grey-2);
     pointer-events: none; }
+
+@media screen and (min-width: 1432px) {
+  header {
+    max-height: 100vh; } }
 
 @media screen and (max-width: 1432px) {
   header {
