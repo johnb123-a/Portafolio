@@ -952,6 +952,18 @@ section {
     .contact__container--content .content__left--info-contact .contact__item p {
       margin: 0.3rem 0 !important;
       padding: 0 2.5rem !important; }
+  .contact__container--content .content__right--contact-form .container-btn__main-btn .btn-text {
+    padding: 0 0.4rem; }
+  .contact__container--content .content__right--contact-form .container-btn__main-btn .btn-icon {
+    align-items: center;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 1rem; }
+  .contact__container--content .content__right--contact-form .container-btn__main-btn:hover {
+    background-color: var(--color-grey-2);
+    cursor: pointer; }
   /* ################################################## */
   .header__content--right p b {
     font-size: 1rem; }

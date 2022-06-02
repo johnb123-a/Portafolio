@@ -315,6 +315,30 @@
               }
             }
           }
+          .content__right {
+            &--contact-form {
+              .container-btn {
+                &__main-btn {
+                  .btn-text {
+                    padding: 0 0.4rem;
+                  }
+
+                  .btn-icon {
+                    align-items: center;
+                    background-color: var(--color-secondary);
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+                  }
+                  &:hover {
+                    background-color: var(--color-grey-2);
+                    cursor: pointer;
+                  }
+                }
+              }
+            }
+          }
         }
       }
     }
