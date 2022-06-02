@@ -904,7 +904,12 @@ section {
   /* ################################################## */
   .theme-btn {
     width: 50px;
-    height: 50px; } }
+    height: 50px; }
+  /* ################################################## */
+  .contact__container--content .content__right--contact-form .container-btn {
+    align-items: center;
+    display: flex;
+    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 600px) and (max-width: 490px) {
   .contact__container--content .content__left--info-contact .contact__item {
