@@ -5,10 +5,13 @@
 @import "./sass/base/base";
 
 @import "./sass/layout/header";
+
 @import "./sass/components/btn";
 @import "./sass/components/about";
 @import "./sass/components/portfolio";
 @import "./sass/components/blogs";
 @import "./sass/components/contact";
-@import "./sass/components/controlls";
+@import "./sass/components/controls";
 @import "./sass/components/theme-btn";
+
+@import "./sass/abstracts/media";

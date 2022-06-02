@@ -51,8 +51,7 @@ a {
   font-family: inherit; }
 
 header {
-  height: 100vh;
-  min-height: 80vh;
+  max-height: 100vh;
   color: var(--color-white);
   overflow: hidden;
   padding: 0 !important; }
@@ -213,6 +212,13 @@ section {
       transform: translate(-50%, -50%);
       transition: all 0.4s ease-in-out;
       z-index: -1; }
+  @media screen and (max-width: 600px) {
+    .about__main-title h2 {
+      font-size: 2rem; }
+      .about__main-title h2 span {
+        font-size: 2.5rem; }
+      .about__main-title h2 .bg-text {
+        font-size: 2.5rem; } }
 
 .about__container {
   display: grid;
@@ -377,6 +383,13 @@ section {
       transform: translate(-50%, -50%);
       transition: all 0.4s ease-in-out;
       z-index: -1; }
+  @media screen and (max-width: 600px) {
+    .portfolio__main-title h2 {
+      font-size: 2rem; }
+      .portfolio__main-title h2 span {
+        font-size: 2.5rem; }
+      .portfolio__main-title h2 .bg-text {
+        font-size: 2.5rem; } }
 
 .portfolio__text {
   padding: 2rem 0;
@@ -449,6 +462,13 @@ section {
       transform: translate(-50%, -50%);
       transition: all 0.4s ease-in-out;
       z-index: -1; }
+  @media screen and (max-width: 600px) {
+    .blogs__content--main-title h2 {
+      font-size: 2rem; }
+      .blogs__content--main-title h2 span {
+        font-size: 2.5rem; }
+      .blogs__content--main-title h2 .bg-text {
+        font-size: 2.5rem; } }
 
 .blogs__content--container {
   display: grid;
@@ -512,6 +532,13 @@ section {
       transform: translate(-50%, -50%);
       transition: all 0.4s ease-in-out;
       z-index: -1; }
+  @media screen and (max-width: 600px) {
+    .contact__container--main-title h2 {
+      font-size: 2rem; }
+      .contact__container--main-title h2 span {
+        font-size: 2.5rem; }
+      .contact__container--main-title h2 .bg-text {
+        font-size: 2.5rem; } }
 
 .contact__container--content {
   display: flex;
@@ -661,3 +688,80 @@ section {
     font-size: 1.4rem;
     color: var(--color-grey-2);
     pointer-events: none; }
+
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+    max-height: 140vh; }
+  .section {
+    padding: 2rem 2.5rem !important; }
+  /* ################################################## */
+  .u-input-control {
+    flex-direction: column; }
+    .u-input-control :last-child {
+      margin-left: 0;
+      margin-top: 1.5rem; }
+  /* ################################################## */
+  .header__content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem; }
+    .header__content--left .h-shape {
+      display: none; }
+    .header__content--left .image {
+      margin: 0 auto;
+      width: 90%; }
+    .header__content--right {
+      grid-row: 1;
+      padding: 2rem !important;
+      width: 90%;
+      margin: 0 auto; }
+      .header__content--right .name {
+        font-size: 2.5rem !important; }
+  /* ################################################## */
+  .about__container {
+    grid-template-columns: 1fr; }
+    .about__container--right {
+      grid-template-columns: 1fr;
+      padding-top: 2.5rem; }
+    .about__container--left {
+      padding-right: 0; }
+      .about__container--left p {
+        padding-left: 0; }
+  .about__stats .progress-bars {
+    grid-template-columns: 1fr; }
+  .about__timeline {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem; }
+  /* ################################################## */
+  .portfolio__portfolios {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem; }
+  /* ################################################## */
+  .blogs__content--container {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem; }
+  /* ################################################## */
+  .contact__container--content {
+    flex-direction: column; }
+    .contact__container--content .content__right {
+      margin-left: 0;
+      margin-top: 2.5rem; }
+    .contact__container--content .content__left--contact-icons .contact-icon {
+      align-items: center;
+      justify-content: center; }
+  /* ################################################## */
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5); }
+    .controls__control {
+      margin: 1rem 0.3rem; }
+  /* ################################################## */
+  .theme-btn {
+    width: 50px;
+    height: 50px; } }

@@ -1,0 +1,121 @@
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+    max-height: 140vh;
+  }
+
+  .section {
+    padding: 2rem 2.5rem !important;
+  }
+  /* ################################################## */
+  .u-input-control {
+    flex-direction: column;
+    :last-child {
+      margin-left: 0;
+      margin-top: 1.5rem;
+    }
+  }
+  /* ################################################## */
+  .header__content {
+    grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+    &--left {
+      .h-shape {
+        display: none;
+      }
+      .image {
+        margin: 0 auto;
+        width: 90%;
+      }
+    }
+    &--right {
+      grid-row: 1;
+      padding: 2rem !important;
+      width: 90%;
+      margin: 0 auto;
+      .name {
+        font-size: 2.5rem !important;
+      }
+    }
+  }
+  /* ################################################## */
+  .about {
+    &__container {
+      grid-template-columns: 1fr;
+      &--right {
+        grid-template-columns: 1fr;
+        padding-top: 2.5rem;
+      }
+      &--left {
+        padding-right: 0;
+        p {
+          padding-left: 0;
+        }
+      }
+    }
+    &__stats {
+      .progress-bars {
+        grid-template-columns: 1fr;
+      }
+    }
+    &__timeline {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+  }
+  /* ################################################## */
+  .portfolio {
+    &__portfolios {
+      grid-template-columns: 1fr;
+      padding-bottom: 6rem;
+    }
+  }
+  /* ################################################## */
+  .blogs {
+    &__content {
+      &--container {
+        grid-template-columns: 1fr;
+        padding-bottom: 6rem;
+      }
+    }
+  }
+  /* ################################################## */
+  .contact {
+    &__container {
+      &--content {
+        flex-direction: column;
+        .content__right {
+          margin-left: 0;
+          margin-top: 2.5rem;
+        }
+        .content__left {
+          &--contact-icons {
+            .contact-icon {
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }
+    }
+  }
+  /* ################################################## */
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+    &__control {
+      margin: 1rem 0.3rem;
+    }
+  }
+  /* ################################################## */
+  .theme-btn {
+    width: 50px;
+    height: 50px;
+  }
+}
