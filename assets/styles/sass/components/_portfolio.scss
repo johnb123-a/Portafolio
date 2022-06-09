@@ -12,12 +12,18 @@
     padding: 2rem 0;
     text-align: center;
   }
+  &__category {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-secondary);
+    grid-column: 1/-1;
+  }
   &__portfolios {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 3rem;
-
     .portfolio__item {
       position: relative;
 
