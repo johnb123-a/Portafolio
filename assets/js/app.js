@@ -48,4 +48,15 @@ function pageTransitions() {
     })
 }
 
+const checkBtn = document.querySelector('#check');
+checkBtn.addEventListener('click', () => {
+    const value = checkBtn.checked;
+    if (value == true) {
+        location.href = "../../index(Es).html";
+    }
+    else {
+        location.href = "../../index.html";
+    }
+})
+
 pageTransitions();
