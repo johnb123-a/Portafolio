@@ -56,6 +56,13 @@
           margin-bottom: 1.5rem;
         }
 
+        p {
+          font-size: 1rem;
+          color: var(--color-white);
+          margin: 0 1rem;
+          margin-bottom: 1.5rem;
+        }
+
         .icons {
           @extend %Center;
           .icon {

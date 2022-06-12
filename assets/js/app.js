@@ -52,7 +52,7 @@ const checkBtn = document.querySelector('#check');
 checkBtn.addEventListener('click', () => {
     const value = checkBtn.checked;
     if (value == true) {
-        location.href = "../../index(Es).html";
+        location.href = "../../index(En).html";
     }
     else {
         location.href = "../../index.html";
