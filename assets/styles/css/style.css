@@ -120,12 +120,14 @@ section {
       height: 80%;
       margin-left: 4rem;
       transition: all 0.4s ease-in-out;
-      width: 68%; }
+      width: 68%;
+      overflow: hidden; }
       .header__content--left .image img {
         height: 100%;
         object-fit: cover;
         transition: all 0.4s ease-in-out;
         width: 100%;
+        border-radius: 15px;
         filter: grayscale(100%); }
         .header__content--left .image img:hover {
           filter: grayscale(0); }
@@ -1006,7 +1008,9 @@ section {
     background-color: var(--color-grey-2);
     cursor: pointer; }
   /* ################################################## */
-  .header__content--right p b {
-    font-size: 1rem; }
-  .header__content--right p span {
-    font-size: 1.3rem; } }
+  .header__content--right {
+    padding: 2rem 0rem !important; }
+    .header__content--right p b {
+      font-size: 1rem; }
+    .header__content--right p span {
+      font-size: 1.3rem; } }
